@@ -1,6 +1,0 @@
-pydantic
-pytest
-snowflake
-snowflake-connector-python
-lxml
-boto3
