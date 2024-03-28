@@ -1,0 +1,49 @@
+[2024-03-26 06:42:25,339] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.upload_data_to_snowflake_task 23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2 [queued]>
+[2024-03-26 06:42:25,346] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.upload_data_to_snowflake_task 23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2 [queued]>
+[2024-03-26 06:42:25,346] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-26 06:42:25,346] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-03-26 06:42:25,346] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-26 06:42:25,356] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): upload_data_to_snowflake_task> on 2024-03-26 06:42:10.655925+00:00
+[2024-03-26 06:42:25,360] {standard_task_runner.py:52} INFO - Started process 2101 to run task
+[2024-03-26 06:42:25,363] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'bigdag', 'upload_data_to_snowflake_task', '23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2', '--job-id', '1364', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpvv8cnav5', '--error-file', '/tmp/tmpe_quddq1']
+[2024-03-26 06:42:25,364] {standard_task_runner.py:80} INFO - Job 1364: Subtask upload_data_to_snowflake_task
+[2024-03-26 06:42:25,408] {task_command.py:369} INFO - Running <TaskInstance: bigdag.upload_data_to_snowflake_task 23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2 [running]> on host 911e7a0235cb
+[2024-03-26 06:42:25,473] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bigdag
+AIRFLOW_CTX_TASK_ID=upload_data_to_snowflake_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-26T06:42:10.655925+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2
+[2024-03-26 06:42:25,475] {logging_mixin.py:115} INFO - {'conf': <***.configuration.AirflowConfigParser object at 0xffff84fe5450>, 'dag': <DAG: bigdag>, 'dag_run': <DagRun bigdag @ 2024-03-26 06:42:10.655925+00:00: 23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2, externally triggered: True>, 'data_interval_end': DateTime(2024, 3, 26, 6, 42, 10, 655925, tzinfo=Timezone('UTC')), 'data_interval_start': DateTime(2024, 3, 26, 6, 42, 10, 655925, tzinfo=Timezone('UTC')), 'ds': '2024-03-26', 'ds_nodash': '20240326', 'execution_date': <Proxy at 0xffff64d86e60 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'execution_date', DateTime(2024, 3, 26, 6, 42, 10, 655925, tzinfo=Timezone('UTC')))>, 'inlets': [], 'logical_date': DateTime(2024, 3, 26, 6, 42, 10, 655925, tzinfo=Timezone('UTC')), 'macros': <module '***.macros' from '/home/***/.local/lib/python3.7/site-packages/***/macros/__init__.py'>, 'next_ds': <Proxy at 0xffff64d86eb0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'next_ds', '2024-03-26')>, 'next_ds_nodash': <Proxy at 0xffff64d86f00 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'next_ds_nodash', '20240326')>, 'next_execution_date': <Proxy at 0xffff64d86f50 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'next_execution_date', DateTime(2024, 3, 26, 6, 42, 10, 655925, tzinfo=Timezone('UTC')))>, 'outlets': [], 'params': {'s3_uri': 's3://cfainstitute-learning-outcomes-raw/t1/Level2_combined.pdf'}, 'prev_data_interval_start_success': DateTime(2024, 3, 26, 6, 38, 43, 963540, tzinfo=Timezone('UTC')), 'prev_data_interval_end_success': DateTime(2024, 3, 26, 6, 38, 43, 963540, tzinfo=Timezone('UTC')), 'prev_ds': <Proxy at 0xffff64d86fa0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'prev_ds', '2024-03-26')>, 'prev_ds_nodash': <Proxy at 0xffff64d8d050 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'prev_ds_nodash', '20240326')>, 'prev_execution_date': <Proxy at 0xffff64d8d0a0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'prev_execution_date', DateTime(2024, 3, 26, 6, 42, 10, 655925, tzinfo=Timezone('UTC')))>, 'prev_execution_date_success': <Proxy at 0xffff64d8d0f0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'prev_execution_date_success', DateTime(2024, 3, 26, 6, 38, 43, 963540, tzinfo=Timezone('UTC')))>, 'prev_start_date_success': DateTime(2024, 3, 26, 6, 38, 44, 245921, tzinfo=Timezone('UTC')), 'run_id': '23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2', 'task': <Task(PythonOperator): upload_data_to_snowflake_task>, 'task_instance': <TaskInstance: bigdag.upload_data_to_snowflake_task 23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2 [running]>, 'task_instance_key_str': 'bigdag__upload_data_to_snowflake_task__20240326', 'test_mode': False, 'ti': <TaskInstance: bigdag.upload_data_to_snowflake_task 23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2 [running]>, 'tomorrow_ds': <Proxy at 0xffff64d8d140 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'tomorrow_ds', '2024-03-27')>, 'tomorrow_ds_nodash': <Proxy at 0xffff64d8d190 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'tomorrow_ds_nodash', '20240327')>, 'ts': '2024-03-26T06:42:10.655925+00:00', 'ts_nodash': '20240326T064210', 'ts_nodash_with_tz': '20240326T064210.655925+0000', 'var': {'json': None, 'value': None}, 'conn': None, 'yesterday_ds': <Proxy at 0xffff64d8d1e0 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'yesterday_ds', '2024-03-25')>, 'yesterday_ds_nodash': <Proxy at 0xffff64d8d230 with factory functools.partial(<function lazy_mapping_from_context.<locals>._deprecated_proxy_factory at 0xffff64df89e0>, 'yesterday_ds_nodash', '20240325')>, 'templates_dict': None}
+[2024-03-26 06:42:25,485] {logging_mixin.py:115} INFO - Ds Level2_combined.csv
+[2024-03-26 06:42:25,486] {connection.py:300} INFO - Snowflake Connector for Python Version: 3.0.4, Python Version: 3.7.13, Platform: Linux-6.6.16-linuxkit-aarch64-with-debian-11.3
+[2024-03-26 06:42:25,487] {connection.py:1013} INFO - This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+[2024-03-26 06:42:25,488] {connection.py:1030} INFO - Setting use_openssl_only mode to False
+[2024-03-26 06:42:26,545] {cursor.py:806} INFO - query: [CREATE DATABASE IF NOT EXISTS CFAInstitute]
+[2024-03-26 06:42:26,635] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:26,635] {cursor.py:962} INFO - Number of results in first chunk: 1
+[2024-03-26 06:42:26,637] {cursor.py:806} INFO - query: [USE DATABASE CFAInstitute]
+[2024-03-26 06:42:26,763] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:26,764] {cursor.py:962} INFO - Number of results in first chunk: 1
+[2024-03-26 06:42:26,764] {cursor.py:806} INFO - query: [USE WAREHOUSE BIGDATA]
+[2024-03-26 06:42:27,046] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:27,047] {cursor.py:962} INFO - Number of results in first chunk: 1
+[2024-03-26 06:42:27,047] {cursor.py:806} INFO - query: [CREATE TABLE IF NOT EXISTS Learning_Outcomes ( Topic VARCHAR, Learning_Outcomes_...]
+[2024-03-26 06:42:27,183] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:27,184] {cursor.py:962} INFO - Number of results in first chunk: 1
+[2024-03-26 06:42:27,185] {cursor.py:806} INFO - query: [TRUNCATE TABLE Learning_Outcomes]
+[2024-03-26 06:42:27,762] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:27,763] {cursor.py:962} INFO - Number of results in first chunk: 1
+[2024-03-26 06:42:27,764] {logging_mixin.py:115} INFO - /opt/***/dags/resources/23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2/Level2_combined.csv
+[2024-03-26 06:42:27,764] {cursor.py:806} INFO - query: [PUT file:///opt/***/dags/resources/23a4b6a5-8d92-40ae-bc5e-c6985f0ff2a2/Leve...]
+[2024-03-26 06:42:28,152] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:28,498] {cursor.py:806} INFO - query: [COPY INTO Learning_Outcomes ON_ERROR=CONTINUE FILE_FORMAT = (FIELD_OPTIONALLY_EN...]
+[2024-03-26 06:42:29,224] {cursor.py:819} INFO - query execution done
+[2024-03-26 06:42:29,224] {cursor.py:962} INFO - Number of results in first chunk: 3
+[2024-03-26 06:42:29,225] {python.py:173} INFO - Done. Returned value was: completed
+[2024-03-26 06:42:29,252] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=bigdag, task_id=upload_data_to_snowflake_task, execution_date=20240326T064210, start_date=20240326T064225, end_date=20240326T064229
+[2024-03-26 06:42:29,287] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-26 06:42:29,323] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

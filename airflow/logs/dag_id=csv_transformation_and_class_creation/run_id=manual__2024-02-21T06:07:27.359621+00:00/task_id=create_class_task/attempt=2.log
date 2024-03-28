@@ -1,0 +1,37 @@
+[2024-02-21 06:12:30,130] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.create_class_task manual__2024-02-21T06:07:27.359621+00:00 [queued]>
+[2024-02-21 06:12:30,143] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.create_class_task manual__2024-02-21T06:07:27.359621+00:00 [queued]>
+[2024-02-21 06:12:30,144] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:12:30,144] {taskinstance.py:1357} INFO - Starting attempt 2 of 2
+[2024-02-21 06:12:30,145] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:12:30,167] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): create_class_task> on 2024-02-21 06:07:27.359621+00:00
+[2024-02-21 06:12:30,175] {standard_task_runner.py:52} INFO - Started process 4141 to run task
+[2024-02-21 06:12:30,183] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'csv_transformation_and_class_creation', 'create_class_task', 'manual__2024-02-21T06:07:27.359621+00:00', '--job-id', '76', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpl74riycd', '--error-file', '/tmp/tmpu32os288']
+[2024-02-21 06:12:30,184] {standard_task_runner.py:80} INFO - Job 76: Subtask create_class_task
+[2024-02-21 06:12:30,285] {task_command.py:369} INFO - Running <TaskInstance: csv_transformation_and_class_creation.create_class_task manual__2024-02-21T06:07:27.359621+00:00 [running]> on host 7f99983bc7dc
+[2024-02-21 06:12:30,453] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=csv_transformation_and_class_creation
+AIRFLOW_CTX_TASK_ID=create_class_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-21T06:07:27.359621+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-21T06:07:27.359621+00:00
+[2024-02-21 06:12:30,456] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2024-02-21 06:12:30,457] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'python3 /opt/***/dags/tests/test_models.py']
+[2024-02-21 06:12:30,469] {subprocess.py:85} INFO - Output:
+[2024-02-21 06:12:30,571] {subprocess.py:92} INFO - Traceback (most recent call last):
+[2024-02-21 06:12:30,572] {subprocess.py:92} INFO -   File "/opt/***/dags/tests/test_models.py", line 1, in <module>
+[2024-02-21 06:12:30,572] {subprocess.py:92} INFO -     from ..models import URLClass
+[2024-02-21 06:12:30,572] {subprocess.py:92} INFO - ImportError: attempted relative import with no known parent package
+[2024-02-21 06:12:30,574] {subprocess.py:96} INFO - Command exited with return code 1
+[2024-02-21 06:12:30,591] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-21 06:12:30,594] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=csv_transformation_and_class_creation, task_id=create_class_task, execution_date=20240221T060727, start_date=20240221T061230, end_date=20240221T061230
+[2024-02-21 06:12:30,606] {standard_task_runner.py:97} ERROR - Failed to execute job 76 for task create_class_task (Bash command failed. The command returned a non-zero exit code 1.; 4141)
+[2024-02-21 06:12:30,649] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-02-21 06:12:30,674] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

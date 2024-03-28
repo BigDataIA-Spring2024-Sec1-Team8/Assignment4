@@ -1,0 +1,51 @@
+[2024-02-21 06:28:21,952] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.run_python_script manual__2024-02-21T06:28:19.743385+00:00 [queued]>
+[2024-02-21 06:28:21,961] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.run_python_script manual__2024-02-21T06:28:19.743385+00:00 [queued]>
+[2024-02-21 06:28:21,962] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:28:21,962] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-02-21 06:28:21,962] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:28:21,975] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_python_script> on 2024-02-21 06:28:19.743385+00:00
+[2024-02-21 06:28:21,980] {standard_task_runner.py:52} INFO - Started process 4992 to run task
+[2024-02-21 06:28:21,984] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'csv_transformation_and_class_creation', 'run_python_script', 'manual__2024-02-21T06:28:19.743385+00:00', '--job-id', '107', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmptry65p45', '--error-file', '/tmp/tmpe6uh1cl3']
+[2024-02-21 06:28:21,984] {standard_task_runner.py:80} INFO - Job 107: Subtask run_python_script
+[2024-02-21 06:28:22,025] {task_command.py:369} INFO - Running <TaskInstance: csv_transformation_and_class_creation.run_python_script manual__2024-02-21T06:28:19.743385+00:00 [running]> on host 7f99983bc7dc
+[2024-02-21 06:28:22,088] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=csv_transformation_and_class_creation
+AIRFLOW_CTX_TASK_ID=run_python_script
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-21T06:28:19.743385+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-21T06:28:19.743385+00:00
+[2024-02-21 06:28:27,451] {logging_mixin.py:115} INFO - jsjsjsjsj
+[2024-02-21 06:28:27,453] {logging_mixin.py:115} INFO - Standard Output:
+[2024-02-21 06:28:27,453] {logging_mixin.py:115} INFO - Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pydantic in /home/***/.local/lib/python3.7/site-packages (from -r /opt/***/dags/requirements.txt (line 1)) (2.5.3)
+Collecting pytest
+  Downloading pytest-7.4.4-py3-none-any.whl (325 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 325.3/325.3 kB 1.7 MB/s eta 0:00:00
+Requirement already satisfied: annotated-types>=0.4.0 in /home/***/.local/lib/python3.7/site-packages (from pydantic->-r /opt/***/dags/requirements.txt (line 1)) (0.5.0)
+Requirement already satisfied: typing-extensions>=4.6.1 in /home/***/.local/lib/python3.7/site-packages (from pydantic->-r /opt/***/dags/requirements.txt (line 1)) (4.7.1)
+Requirement already satisfied: importlib-metadata in /home/***/.local/lib/python3.7/site-packages (from pydantic->-r /opt/***/dags/requirements.txt (line 1)) (4.11.3)
+Requirement already satisfied: pydantic-core==2.14.6 in /home/***/.local/lib/python3.7/site-packages (from pydantic->-r /opt/***/dags/requirements.txt (line 1)) (2.14.6)
+Requirement already satisfied: pluggy<2.0,>=0.12 in /home/***/.local/lib/python3.7/site-packages (from pytest->-r /opt/***/dags/requirements.txt (line 2)) (1.0.0)
+Collecting iniconfig
+  Downloading iniconfig-2.0.0-py3-none-any.whl (5.9 kB)
+Collecting tomli>=1.0.0
+  Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+Requirement already satisfied: packaging in /home/***/.local/lib/python3.7/site-packages (from pytest->-r /opt/***/dags/requirements.txt (line 2)) (21.3)
+Collecting exceptiongroup>=1.0.0rc8
+  Downloading exceptiongroup-1.2.0-py3-none-any.whl (16 kB)
+Requirement already satisfied: zipp>=0.5 in /home/***/.local/lib/python3.7/site-packages (from importlib-metadata->pydantic->-r /opt/***/dags/requirements.txt (line 1)) (3.8.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in /home/***/.local/lib/python3.7/site-packages (from packaging->pytest->-r /opt/***/dags/requirements.txt (line 2)) (2.4.7)
+Installing collected packages: tomli, iniconfig, exceptiongroup, pytest
+Successfully installed exceptiongroup-1.2.0 iniconfig-2.0.0 pytest-7.4.4 tomli-2.0.1
+
+[notice] A new release of pip available: 22.1.2 -> 24.0
+[notice] To update, run: python -m pip install --upgrade pip
+[2024-02-21 06:28:27,453] {logging_mixin.py:115} INFO - Standard Error:
+[2024-02-21 06:28:27,453] {logging_mixin.py:115} INFO - /bin/sh: 1: python-m: Permission denied
+[2024-02-21 06:28:27,454] {python.py:173} INFO - Done. Returned value was: None
+[2024-02-21 06:28:27,480] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=csv_transformation_and_class_creation, task_id=run_python_script, execution_date=20240221T062819, start_date=20240221T062821, end_date=20240221T062827
+[2024-02-21 06:28:27,503] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-02-21 06:28:27,524] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

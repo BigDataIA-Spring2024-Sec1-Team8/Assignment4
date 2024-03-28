@@ -1,0 +1,23 @@
+[2024-02-21 06:14:01,699] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.transform_csv_task manual__2024-02-21T06:14:00.517855+00:00 [queued]>
+[2024-02-21 06:14:01,714] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.transform_csv_task manual__2024-02-21T06:14:00.517855+00:00 [queued]>
+[2024-02-21 06:14:01,715] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:14:01,715] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-02-21 06:14:01,716] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:14:01,731] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): transform_csv_task> on 2024-02-21 06:14:00.517855+00:00
+[2024-02-21 06:14:01,737] {standard_task_runner.py:52} INFO - Started process 4220 to run task
+[2024-02-21 06:14:01,740] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'csv_transformation_and_class_creation', 'transform_csv_task', 'manual__2024-02-21T06:14:00.517855+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpiq0d0x8f', '--error-file', '/tmp/tmpt29oe38l']
+[2024-02-21 06:14:01,744] {standard_task_runner.py:80} INFO - Job 78: Subtask transform_csv_task
+[2024-02-21 06:14:01,789] {task_command.py:369} INFO - Running <TaskInstance: csv_transformation_and_class_creation.transform_csv_task manual__2024-02-21T06:14:00.517855+00:00 [running]> on host 7f99983bc7dc
+[2024-02-21 06:14:01,858] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=csv_transformation_and_class_creation
+AIRFLOW_CTX_TASK_ID=transform_csv_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-21T06:14:00.517855+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-21T06:14:00.517855+00:00
+[2024-02-21 06:14:02,325] {python.py:173} INFO - Done. Returned value was: None
+[2024-02-21 06:14:02,342] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=csv_transformation_and_class_creation, task_id=transform_csv_task, execution_date=20240221T061400, start_date=20240221T061401, end_date=20240221T061402
+[2024-02-21 06:14:02,396] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-02-21 06:14:02,442] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,29 @@
+[2024-03-26 06:38:48,348] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.extract 711fc702-cbae-49ed-8c8e-ea2138ff8713 [queued]>
+[2024-03-26 06:38:48,354] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.extract 711fc702-cbae-49ed-8c8e-ea2138ff8713 [queued]>
+[2024-03-26 06:38:48,354] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-26 06:38:48,355] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-03-26 06:38:48,355] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-26 06:38:48,368] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): extract> on 2024-03-26 06:38:43.963540+00:00
+[2024-03-26 06:38:48,373] {standard_task_runner.py:52} INFO - Started process 1865 to run task
+[2024-03-26 06:38:48,377] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'bigdag', 'extract', '711fc702-cbae-49ed-8c8e-ea2138ff8713', '--job-id', '1349', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmppmftz8th', '--error-file', '/tmp/tmpfra10i4x']
+[2024-03-26 06:38:48,378] {standard_task_runner.py:80} INFO - Job 1349: Subtask extract
+[2024-03-26 06:38:48,421] {task_command.py:369} INFO - Running <TaskInstance: bigdag.extract 711fc702-cbae-49ed-8c8e-ea2138ff8713 [running]> on host 911e7a0235cb
+[2024-03-26 06:38:48,478] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bigdag
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-26T06:38:43.963540+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=711fc702-cbae-49ed-8c8e-ea2138ff8713
+[2024-03-26 06:38:48,584] {logging_mixin.py:115} INFO - GROBID server is up and running
+[2024-03-26 06:38:48,585] {logging_mixin.py:115} INFO - /opt/***/dags/resources/711fc702-cbae-49ed-8c8e-ea2138ff8713
+[2024-03-26 06:38:48,585] {logging_mixin.py:115} INFO - came
+[2024-03-26 06:38:48,587] {logging_mixin.py:115} INFO - ['/opt/***/dags/resources/711fc702-cbae-49ed-8c8e-ea2138ff8713/Level1_combined.pdf']
+[2024-03-26 06:38:54,562] {logging_mixin.py:115} INFO - etiti
+[2024-03-26 06:38:54,600] {logging_mixin.py:115} INFO - Level1_combined.pdf
+[2024-03-26 06:38:54,601] {python.py:173} INFO - Done. Returned value was: Level1_combined.grobid.tei.xml
+[2024-03-26 06:38:54,651] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=bigdag, task_id=extract, execution_date=20240326T063843, start_date=20240326T063848, end_date=20240326T063854
+[2024-03-26 06:38:54,700] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-26 06:38:54,755] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check

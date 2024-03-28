@@ -1,0 +1,26 @@
+[2024-03-27 19:29:46,560] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.convert_xml_to_metadata_task 0f396986-b3a0-406c-9ce7-b779ab334115 [queued]>
+[2024-03-27 19:29:46,635] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.convert_xml_to_metadata_task 0f396986-b3a0-406c-9ce7-b779ab334115 [queued]>
+[2024-03-27 19:29:46,644] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-27 19:29:46,676] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-03-27 19:29:46,709] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-27 19:29:46,816] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): convert_xml_to_metadata_task> on 2024-03-27 19:29:04.110149+00:00
+[2024-03-27 19:29:46,868] {standard_task_runner.py:52} INFO - Started process 1497 to run task
+[2024-03-27 19:29:46,920] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'bigdag', 'convert_xml_to_metadata_task', '0f396986-b3a0-406c-9ce7-b779ab334115', '--job-id', '1391', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmp0jcltvt6', '--error-file', '/tmp/tmpcehqd88o']
+[2024-03-27 19:29:46,938] {standard_task_runner.py:80} INFO - Job 1391: Subtask convert_xml_to_metadata_task
+[2024-03-27 19:29:47,285] {task_command.py:369} INFO - Running <TaskInstance: bigdag.convert_xml_to_metadata_task 0f396986-b3a0-406c-9ce7-b779ab334115 [running]> on host 9b878320bbfc
+[2024-03-27 19:29:47,972] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bigdag
+AIRFLOW_CTX_TASK_ID=convert_xml_to_metadata_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-27T19:29:04.110149+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=0f396986-b3a0-406c-9ce7-b779ab334115
+[2024-03-27 19:29:48,197] {logging_mixin.py:115} INFO - /opt/***/dags/resources/0f396986-b3a0-406c-9ce7-b779ab334115
+[2024-03-27 19:29:48,201] {logging_mixin.py:115} INFO - Level1_combined_metadata.csv
+[2024-03-27 19:29:48,283] {logging_mixin.py:115} INFO - Level1_combined_metadata {'Title': 'No Data', 'Publisher': 'No Data', 'AvailabilityStatus': 'unknown', 'Analytic': '', 'ImprintedDate': 'No Data', 'AppInfoDescription': 'GROBID - A machine learning software for extracting information from scholarly documents', 'Abstract': 'No Data'}
+[2024-03-27 19:29:48,317] {python.py:173} INFO - Done. Returned value was: Level1_combined_metadata.csv
+[2024-03-27 19:29:48,617] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=bigdag, task_id=convert_xml_to_metadata_task, execution_date=20240327T192904, start_date=20240327T192946, end_date=20240327T192948
+[2024-03-27 19:29:48,826] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-27 19:29:49,942] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

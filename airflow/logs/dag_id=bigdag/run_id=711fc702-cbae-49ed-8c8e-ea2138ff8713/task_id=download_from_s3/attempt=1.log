@@ -1,0 +1,25 @@
+[2024-03-26 06:38:45,390] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.download_from_s3 711fc702-cbae-49ed-8c8e-ea2138ff8713 [queued]>
+[2024-03-26 06:38:45,397] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.download_from_s3 711fc702-cbae-49ed-8c8e-ea2138ff8713 [queued]>
+[2024-03-26 06:38:45,397] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-26 06:38:45,397] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-03-26 06:38:45,397] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-26 06:38:45,411] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): download_from_s3> on 2024-03-26 06:38:43.963540+00:00
+[2024-03-26 06:38:45,416] {standard_task_runner.py:52} INFO - Started process 1859 to run task
+[2024-03-26 06:38:45,419] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'bigdag', 'download_from_s3', '711fc702-cbae-49ed-8c8e-ea2138ff8713', '--job-id', '1348', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmplaojjdy0', '--error-file', '/tmp/tmpzjbp1xqm']
+[2024-03-26 06:38:45,420] {standard_task_runner.py:80} INFO - Job 1348: Subtask download_from_s3
+[2024-03-26 06:38:45,463] {task_command.py:369} INFO - Running <TaskInstance: bigdag.download_from_s3 711fc702-cbae-49ed-8c8e-ea2138ff8713 [running]> on host 911e7a0235cb
+[2024-03-26 06:38:45,523] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bigdag
+AIRFLOW_CTX_TASK_ID=download_from_s3
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-26T06:38:43.963540+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=711fc702-cbae-49ed-8c8e-ea2138ff8713
+[2024-03-26 06:38:45,524] {logging_mixin.py:115} INFO - /opt/***/dags
+[2024-03-26 06:38:45,584] {logging_mixin.py:115} INFO - /opt/***/dags/resources/711fc702-cbae-49ed-8c8e-ea2138ff8713/Level1_combined.pdf
+[2024-03-26 06:38:46,688] {python.py:173} INFO - Done. Returned value was: Level1_combined.pdf
+[2024-03-26 06:38:46,725] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=bigdag, task_id=download_from_s3, execution_date=20240326T063843, start_date=20240326T063845, end_date=20240326T063846
+[2024-03-26 06:38:46,745] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-26 06:38:46,779] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

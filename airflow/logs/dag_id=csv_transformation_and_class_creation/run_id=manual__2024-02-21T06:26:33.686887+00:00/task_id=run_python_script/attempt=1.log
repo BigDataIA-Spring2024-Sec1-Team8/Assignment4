@@ -1,0 +1,48 @@
+[2024-02-21 06:26:35,902] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.run_python_script manual__2024-02-21T06:26:33.686887+00:00 [queued]>
+[2024-02-21 06:26:35,930] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: csv_transformation_and_class_creation.run_python_script manual__2024-02-21T06:26:33.686887+00:00 [queued]>
+[2024-02-21 06:26:35,930] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:26:35,931] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-02-21 06:26:35,931] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-21 06:26:35,943] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): run_python_script> on 2024-02-21 06:26:33.686887+00:00
+[2024-02-21 06:26:35,947] {standard_task_runner.py:52} INFO - Started process 4873 to run task
+[2024-02-21 06:26:35,950] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'csv_transformation_and_class_creation', 'run_python_script', 'manual__2024-02-21T06:26:33.686887+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpbqj5zpda', '--error-file', '/tmp/tmpjk0pieb2']
+[2024-02-21 06:26:35,951] {standard_task_runner.py:80} INFO - Job 101: Subtask run_python_script
+[2024-02-21 06:26:36,022] {task_command.py:369} INFO - Running <TaskInstance: csv_transformation_and_class_creation.run_python_script manual__2024-02-21T06:26:33.686887+00:00 [running]> on host 7f99983bc7dc
+[2024-02-21 06:26:36,077] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=csv_transformation_and_class_creation
+AIRFLOW_CTX_TASK_ID=run_python_script
+AIRFLOW_CTX_EXECUTION_DATE=2024-02-21T06:26:33.686887+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-02-21T06:26:33.686887+00:00
+[2024-02-21 06:26:45,765] {logging_mixin.py:115} INFO - jsjsjsjsj
+[2024-02-21 06:26:45,767] {logging_mixin.py:115} INFO - Standard Output:
+[2024-02-21 06:26:45,768] {logging_mixin.py:115} INFO - Defaulting to user installation because normal site-packages is not writeable
+Collecting pydantic
+  Downloading pydantic-2.5.3-py3-none-any.whl (381 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 381.9/381.9 kB 1.2 MB/s eta 0:00:00
+Requirement already satisfied: importlib-metadata in /home/***/.local/lib/python3.7/site-packages (from pydantic->-r /opt/***/dags/requirements.txt (line 1)) (4.11.3)
+Collecting annotated-types>=0.4.0
+  Downloading annotated_types-0.5.0-py3-none-any.whl (11 kB)
+Collecting typing-extensions>=4.6.1
+  Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+Collecting pydantic-core==2.14.6
+  Downloading pydantic_core-2.14.6-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (1.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 2.1 MB/s eta 0:00:00
+Requirement already satisfied: zipp>=0.5 in /home/***/.local/lib/python3.7/site-packages (from importlib-metadata->pydantic->-r /opt/***/dags/requirements.txt (line 1)) (3.8.0)
+Installing collected packages: typing-extensions, pydantic-core, annotated-types, pydantic
+  Attempting uninstall: typing-extensions
+    Found existing installation: typing_extensions 4.2.0
+    Uninstalling typing_extensions-4.2.0:
+      Successfully uninstalled typing_extensions-4.2.0
+Successfully installed annotated-types-0.5.0 pydantic-2.5.3 pydantic-core-2.14.6 typing-extensions-4.7.1
+
+[notice] A new release of pip available: 22.1.2 -> 24.0
+[notice] To update, run: python -m pip install --upgrade pip
+[2024-02-21 06:26:45,768] {logging_mixin.py:115} INFO - Standard Error:
+[2024-02-21 06:26:45,770] {python.py:173} INFO - Done. Returned value was: None
+[2024-02-21 06:26:45,847] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=csv_transformation_and_class_creation, task_id=run_python_script, execution_date=20240221T062633, start_date=20240221T062635, end_date=20240221T062645
+[2024-02-21 06:26:45,954] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-02-21 06:26:46,114] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

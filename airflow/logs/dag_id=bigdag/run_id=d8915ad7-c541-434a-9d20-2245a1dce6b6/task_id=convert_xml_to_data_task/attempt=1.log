@@ -1,0 +1,25 @@
+[2024-03-27 18:58:58,207] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.convert_xml_to_data_task d8915ad7-c541-434a-9d20-2245a1dce6b6 [queued]>
+[2024-03-27 18:58:58,224] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: bigdag.convert_xml_to_data_task d8915ad7-c541-434a-9d20-2245a1dce6b6 [queued]>
+[2024-03-27 18:58:58,225] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-27 18:58:58,226] {taskinstance.py:1357} INFO - Starting attempt 1 of 2
+[2024-03-27 18:58:58,226] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-27 18:58:58,246] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): convert_xml_to_data_task> on 2024-03-27 18:58:33.387305+00:00
+[2024-03-27 18:58:58,257] {standard_task_runner.py:52} INFO - Started process 860 to run task
+[2024-03-27 18:58:58,266] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'bigdag', 'convert_xml_to_data_task', 'd8915ad7-c541-434a-9d20-2245a1dce6b6', '--job-id', '1381', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpifxc6a8k', '--error-file', '/tmp/tmp28ro55gh']
+[2024-03-27 18:58:58,268] {standard_task_runner.py:80} INFO - Job 1381: Subtask convert_xml_to_data_task
+[2024-03-27 18:58:58,400] {task_command.py:369} INFO - Running <TaskInstance: bigdag.convert_xml_to_data_task d8915ad7-c541-434a-9d20-2245a1dce6b6 [running]> on host 9b878320bbfc
+[2024-03-27 18:58:58,497] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bigdag
+AIRFLOW_CTX_TASK_ID=convert_xml_to_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-27T18:58:33.387305+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=d8915ad7-c541-434a-9d20-2245a1dce6b6
+[2024-03-27 18:58:58,512] {logging_mixin.py:115} INFO - ['/opt/***/dags/resources/d8915ad7-c541-434a-9d20-2245a1dce6b6/Level1_combined.grobid.tei.xml']
+[2024-03-27 18:58:58,514] {logging_mixin.py:115} INFO - /opt/***/dags/resources/d8915ad7-c541-434a-9d20-2245a1dce6b6/Level1_combined.grobid.tei.xml
+[2024-03-27 18:58:58,537] {python.py:173} INFO - Done. Returned value was: Level1_combined.csv
+[2024-03-27 18:58:58,595] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=bigdag, task_id=convert_xml_to_data_task, execution_date=20240327T185833, start_date=20240327T185858, end_date=20240327T185858
+[2024-03-27 18:58:58,656] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-27 18:58:58,770] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
