@@ -20,10 +20,11 @@ Fast API | Airflow | Snowflake | Kafka | Streamlit | AWS
 
 - The system uses Streamlit for user uploads triggering a Kafka pipeline; Airflow servers manage tasks, while FastAPI facilitates communication and Snowflake stores data, enabling seamless PDF transformation for analysis.
 
-Airflow Tasks
+**Airflow Tasks**
 
 ![f_YVCaMJC4FRBGs6DI5YfOE2TNvCKTGJ4TyaNGGmLGlX28fz-5OguoczxLfDmzMyNLXU0YjyyQqFSS0XXoxKi9cfoLaw5HPDdHPugd5w-OzTya2nFtTrXd39zlNG](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/assets/114782541/008dcf43-7b72-4e99-9436-3b59c308225e)
 
+- The Airflow DAG sequence includes downloading PDFs from S3, reading, extracting text with Grobid, converting to CSV, validating with Pydantic, and storing in Snowflake for analysis.
 
 ## Repository Structure
 **Overview**
