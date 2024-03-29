@@ -32,14 +32,6 @@ Fast API | Airflow | Snowflake | Kafka | Streamlit | AWS
 
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Overview.png)
 
-**The Webservices**
-
-![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Webservices.png)
-
-**Airflow**
-
-![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Airflow.png)
-
 
 ## Contributions
 -Sai Durga Mahesh Bandaru - 33.3%
