@@ -17,11 +17,19 @@ For High Volume Processing
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_HighVolume.png)
 
 ## Repository Structure
+-Overview
+![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Overview.png)
+
+- The Webservices
+![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Webservices.png)
+
+- Airflow
+![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Airflow.png)
 
 
 ## Contributions
-Sai Durga Mahesh Bandaru - 33.3%
-Sri Poojitha Mandali - 33.3%
-Shivani Gulgani - 33.3%
+-Sai Durga Mahesh Bandaru - 33.3%
+-Sri Poojitha Mandali - 33.3%
+-Shivani Gulgani - 33.3%
 
 WE ATTEST THAT WE HAVEN’T USED ANY OTHER STUDENTS’ WORK IN OUR ASSIGNMENT AND ABIDE BY THE POLICIES LISTED IN THE STUDENT HANDBOOK
