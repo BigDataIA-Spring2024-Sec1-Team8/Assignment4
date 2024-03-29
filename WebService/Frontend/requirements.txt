@@ -1,0 +1,7 @@
+streamlit
+requests
+asyncio
+websockets
+boto3
+zipfile36
+confluent_kafka
