@@ -7,7 +7,7 @@ We have built a system that handles data using Fast API, Airflow, Snowflake, Str
 - Google Codelabs - https://codelabs-preview.appspot.com/?file_id=1uXikN37mPdhQEFKc0ie2BY0VctI6MaWroPuIYfkSPCs#0 
 
 ## Tech Stack
-Fast API | Airflow | Snowflake | Kafka | Streamlit
+Fast API | Airflow | Snowflake | Kafka | Streamlit | AWS
 
 ## Architecture Diagram
 For Low Volume Processing
