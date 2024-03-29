@@ -17,13 +17,13 @@ For High Volume Processing
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_HighVolume.png)
 
 ## Repository Structure
--Overview
+**Overview**
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Overview.png)
 
-- The Webservices
+**The Webservices**
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Webservices.png)
 
-- Airflow
+**Airflow**
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/Airflow.png)
 
 
