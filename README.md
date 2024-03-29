@@ -1,14 +1,16 @@
-#Project Overview
+# Assignment 4
 
-#Project Resources
+## Project Overview
 
-#Tech Stack
+## Project Resources
 
-#Architecture Diagram
+## Tech Stack
 
-#Repository Structure
+## Architecture Diagram
 
-#Contributions
+## Repository Structure
+
+## Contributions
 Sai Durga Mahesh Bandaru - 33.3%
 Sri Poojitha Mandali - 33.3%
 Shivani Gulgani - 33.3%
