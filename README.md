@@ -10,10 +10,12 @@ We have built a system that handles data using Fast API, Airflow, Snowflake, Str
 Fast API | Airflow | Snowflake | Kafka | Streamlit | AWS
 
 ## Architecture Diagram
-For Low Volume Processing
+**For Low Volume Processing**
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_LowVolume.png)
 
-For High Volume Processing
+- AWS-based setup uses Streamlit for user file uploads, Load Balancer for even distribution, and Airflow for managing PDF processing in an S3 bucket, dynamically scaling resources for efficiency without the complexity of Kafka for high-volume scenarios.
+
+**For High Volume Processing**
 ![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_HighVolume.png)
 
 ## Repository Structure
