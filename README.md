@@ -10,9 +10,14 @@ We have built a system that handles data using Fast API, Airflow, Snowflake, Str
 Fast API | Airflow | Snowflake | Kafka | Streamlit
 
 ## Architecture Diagram
-![image]https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_LowVolume.png 
+For Low Volume Processing
+![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_LowVolume.png)
+
+For High Volume Processing
+![image](https://github.com/BigDataIA-Spring2024-Sec1-Team8/Assignment4/blob/main/AD_HighVolume.png)
 
 ## Repository Structure
+
 
 ## Contributions
 Sai Durga Mahesh Bandaru - 33.3%
